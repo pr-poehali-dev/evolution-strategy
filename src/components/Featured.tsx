@@ -9,13 +9,22 @@ export default function Featured() {
         />
       </div>
       <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">Функции, которые не стоят на месте</h3>
+        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-500" id="how">Как это работает</h3>
         <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          Не просто список возможностей — живые, дышащие акценты. Каждая функция адаптируется к движению, контексту и настроению,
-          оживляя продукт с первого взгляда.
+          Мы анализируем твои топ-треки, любимых артистов и время прослушивания — и выносим честный (и немного жестокий) вердикт о твоих вкусах.
         </p>
-        <button className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide">
-          Подробнее
+        <ul className="mb-8 flex flex-col gap-3 text-neutral-700 text-base">
+          <li>🎧 <span className="font-semibold">Подключаешь</span> Spotify-аккаунт</li>
+          <li>🔥 <span className="font-semibold">ИИ прожаривает</span> твои плейлисты и статистику</li>
+          <li>😬 <span className="font-semibold">Получаешь</span> персональный роаст с разбором каждого греха</li>
+        </ul>
+        <button
+          className="px-6 py-3 text-sm uppercase tracking-wide font-bold w-fit transition-all duration-300 cursor-pointer"
+          style={{ backgroundColor: "#1DB954", color: "#000" }}
+          onMouseEnter={e => (e.currentTarget.style.backgroundColor = "#17a349")}
+          onMouseLeave={e => (e.currentTarget.style.backgroundColor = "#1DB954")}
+        >
+          Получить мой роаст
         </button>
       </div>
     </div>
